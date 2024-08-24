@@ -22,9 +22,14 @@ function MyBookings() {
   useEffect(() => {
     if (userId) {
       axios
-        .get(`http://localhost:3000/api/bookings/student/${userId}`, {
-          headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
-        })
+        .get(
+          `https://mentors-booking-backend-3.onrender.com/api/bookings/student/${userId}`,
+          {
+            headers: {
+              Authorization: `Bearer ${localStorage.getItem("token")}`,
+            },
+          }
+        )
         .then((response) => setBookings(response.data))
         .catch((error) => console.error("Error fetching bookings:", error));
     }

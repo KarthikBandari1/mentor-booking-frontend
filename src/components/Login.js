@@ -17,7 +17,7 @@ const Login = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/students/login",
+        "https://mentors-booking-backend-3.onrender.com//students/login",
         { studentId, password }
       );
 

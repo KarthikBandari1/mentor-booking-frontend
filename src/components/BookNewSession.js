@@ -30,7 +30,7 @@ function BookNewSession() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/mentors", {
+      .get("https://mentors-booking-backend-3.onrender.com/api/mentors", {
         headers: { Authorization: `Bearer ${token}` },
       })
       .then((response) => setMentors(response.data))
@@ -132,7 +132,7 @@ function BookNewSession() {
 
       axios
         .post(
-          "http://localhost:3000/api/bookings",
+          "https://mentors-booking-backend-3.onrender.com/api/bookings",
           {
             student_id: studentId,
             mentor_id: selectedMentor.id,

@@ -3,7 +3,7 @@ import axios from "axios";
 const api = {
   fetchMentors: (areaOfInterest) => {
     return axios
-      .get(`http://localhost:3000/api/mentors`)
+      .get(`https://mentors-booking-backend-3.onrender.com/api/mentors`)
       .then((response) => response.data)
       .catch((error) => {
         console.error("Error fetching mentors:", error);
@@ -13,7 +13,10 @@ const api = {
 
   createBooking: (bookingData) => {
     return axios
-      .post("http://localhost:3000/api/bookings", bookingData)
+      .post(
+        "https://mentors-booking-backend-3.onrender.com/api/bookings",
+        bookingData
+      )
       .then((response) => response.data)
       .catch((error) => {
         console.error("Error creating booking:", error);

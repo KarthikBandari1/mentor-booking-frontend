@@ -24,7 +24,7 @@ const Signup = () => {
     }
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/students/register",
+        "https://mentors-booking-backend-3.onrender.com/api/students/register",
         {
           name,
           email,
