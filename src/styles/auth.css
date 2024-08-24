@@ -1,0 +1,96 @@
+.auth-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroup {
+  margin-bottom: 1rem;
+}
+
+.label {
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.input {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+.button {
+  padding: 0.8rem;
+  background-color: #cea501;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 16px;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.text {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #333;
+}
+
+.link {
+  color: #cea501;
+  text-decoration: none;
+}
+
+.passwordContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.icon {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #b2afaf;
+  margin-right: 5px;
+}
+
+.icon:hover {
+  color: #555;
+}

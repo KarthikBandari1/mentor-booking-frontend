@@ -1,0 +1,106 @@
+.my-bookings {
+  display: flex;
+  background-color: #f9f9f9;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.content {
+  margin-left: 270px;
+  padding: 20px;
+  width: calc(100% - 270px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.content li {
+  background-color: #fff;
+  border-radius: 12px;
+  margin: 15px 0;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.content p {
+  font-size: 16px;
+  color: #555;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.content h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 10px 0;
+}
+
+.booking-details {
+  font-size: 16px;
+  color: #555;
+}
+
+.booking-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.booking-actions {
+  margin-top: 15px;
+}
+
+.booking-actions button {
+  background-color: #ffcb05;
+  color: #333;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.booking-actions button:hover {
+  background-color: #f7b500;
+  color: #fff;
+}
+
+.no-bookings {
+  font-size: 18px;
+  color: #ff0000;
+  text-align: center;
+  margin-top: 20px;
+}
